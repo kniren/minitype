@@ -7,7 +7,7 @@ To use it just set your desired parameters on the `_config.scss` file
 and include `_minitype.scss` on your main sass file
 
 After that you are free to use the built-in variables for the font
-size and line height. These are named after LaTeX size conventions:
+size and line height. These are named after LaTeX size conventions.
 
 | Font Size  | Line Heights |
 | ---------- | ------------ |
@@ -24,6 +24,8 @@ size and line height. These are named after LaTeX size conventions:
 You can also use the included mixins to insert the adjusted headings
 and several media queries for responsive design.
 
+    @import 'minitype/minitype'
+
     // Include the formatted headings adjusted for the chosen scale
     @include includeHeadings();
 
@@ -32,6 +34,7 @@ and several media queries for responsive design.
 
     // Include media queries to adjust the font size
     @include includeMediaQueries();
+
     // All the above 
     @include minitype();
 
