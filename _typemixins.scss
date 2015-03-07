@@ -58,11 +58,27 @@
   }
 }
 
+@mixin hypenate() {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
 @mixin includeMediaQueries() {
   @media (max-width:600px) 
   {
     html {
       font-size:$f-base * 0.9;
+    }
+  }
+
+  @media (max-width:400px) 
+  {
+    html {
+      font-size:$f-base * 0.9;
+      @include hypenate();
     }
   }
 
@@ -72,6 +88,7 @@
     and (max-device-width : 480px) {
     html {
       font-size:$f-base * 2;
+      @include hypenate();
     }
   }
   
@@ -80,7 +97,8 @@
     and (min-device-width : 320px) 
     and (max-device-width : 568px) {
     html {
-      font-size:$f-base * 3;
+      font-size:$f-base * 2;
+      @include hypenate();
     }
   }
   
@@ -89,7 +107,8 @@
     and (min-device-width : 375px) 
     and (max-device-width : 667px) {
     html {
-      font-size:$f-base * 3;
+      font-size:$f-base * 2;
+      @include hypenate();
     }
   }
   
