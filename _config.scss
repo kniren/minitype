@@ -18,5 +18,7 @@ $lh: 1.5 * $f-base;
 $scale: $perfectfourth;
 
 // (Optional) Font family for headings and body
+// Set $f-family:true if using font family variables
+$f-family:false;
 //$f-headings: 'Open Sans', sans-serif;
 //$f-body: 'Open Sans', sans-serif;

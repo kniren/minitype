@@ -139,13 +139,13 @@
   
   body {
     line-height: $lh;
-    @if($f-body) {
+    @if($f-family) {
       font-family: $f-body;
     }
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @if($f-headings){
+    @if($f-family){
       font-family: $f-headings; 
     }
     margin-top:0;
