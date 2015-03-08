@@ -18,6 +18,16 @@
       font-size: $f-large;
       line-height: $lh-large * $lhmult-h4;
     }
+
+    h5 {
+      font-size: $f-base;
+      line-height: $lh;
+    }
+
+    h6 {
+      font-size: $f-small;
+      line-height: $lh-small;
+    }
 }
 
 @mixin includeHeadings() {
@@ -129,9 +139,15 @@
   
   body {
     line-height: $lh;
+    @if($f-body) {
+      font-family: $f-body;
+    }
   }
   
-  h1, h2, h3, h4 {
+  h1, h2, h3, h4, h5, h6 {
+    @if($f-headings){
+      font-family: $f-headings; 
+    }
     margin-top:0;
     margin-bottom: $lh;
   }
