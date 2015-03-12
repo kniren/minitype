@@ -87,7 +87,7 @@
   @media (max-width:400px) 
   {
     html {
-      font-size:$f-base * 0.9;
+      font-size:$f-base * 0.8;
       @include hypenate();
     }
   }

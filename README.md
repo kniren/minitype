@@ -3,6 +3,9 @@ Minitype
 
 A minimalistic type framework to help you keep the vertical rhythm on
 your website using modular scales.
+
+![Minitype preview](http://s27.postimg.org/4a4ayh6eb/preview.png)
+
 To use it just set your desired parameters on the `_config.scss` file
 and include `_minitype.scss` on your main sass file
 
