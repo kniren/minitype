@@ -20,3 +20,9 @@ $scale: $perfectfourth;
 // Set $f-family:true if using font family variables
 $f-headings: 'Helvetica Neue', 'Arial', sans-serif;
 $f-body: 'Helvetica Neue', 'Arial', sans-serif;
+
+// Set the font scale multipliers for iOS devices
+$iPhone4Scale: 2;
+$iPhone5Scale: 2;
+$iPhone6Scale: 2;
+$iPadScale:    2;

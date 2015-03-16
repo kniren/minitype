@@ -76,7 +76,7 @@
   hyphens: auto;
 }
 
-@mixin includeMediaQueries($mult-4: 2, $mult-5: 2, $mult-6: 2, $mult-PA: 2) {
+@mixin includeMediaQueries() {
   @media (max-width:600px) 
   {
     html {
@@ -96,7 +96,7 @@
     and (min-device-width : 320px) 
     and (max-device-width : 480px) {
     html {
-      font-size:$f-base * $mult-4;
+      font-size:$f-base * $iPhone4Scale;
     }
   }
   
@@ -105,7 +105,7 @@
     and (min-device-width : 320px) 
     and (max-device-width : 568px) {
     html {
-      font-size:$f-base * $mult-5;
+      font-size:$f-base * $iPhone5Scale;
     }
   }
   
@@ -114,7 +114,7 @@
     and (min-device-width : 375px) 
     and (max-device-width : 667px) {
     html {
-      font-size:$f-base * $mult-6;
+      font-size:$f-base * $iPhone6Scale;
     }
   }
   
@@ -123,7 +123,7 @@
     and (min-device-width : 768px) 
     and (max-device-width : 1024px) {
     html {
-      font-size:$f-base * $mult-PA;
+      font-size:$f-base * $iPadScale;
     }
   }
 }
@@ -169,8 +169,8 @@
   }
 }
 
-@mixin minitype($mult-4: 2, $mult-5: 2, $mult-6: 2, $mult-PA: 2) {
+@mixin minitype() {
   @include includeBase();
   @include includeHeadings();
-  @include includeMediaQueries($mult-4,$mult-5,$mult-6,$mult-PA);
+  @include includeMediaQueries();
 }
