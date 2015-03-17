@@ -30,13 +30,13 @@ and several media queries for responsive design.
     @import 'minitype/minitype'
 
     // Include the formatted headings adjusted for the chosen scale
-    @include includeHeadings();
+    @include minitypeHeadings();
 
     // Include the base elements for typographic design
-    @include includeBase();
+    @include minitypeBase();
 
     // Include media queries to adjust the font size
-    @include includeMediaQueries();
+    @include minitypeMediaQueries();
 
     // All the above 
     @include minitype();
