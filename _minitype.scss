@@ -173,7 +173,7 @@
 }
 
 @mixin minitype() {
-  @include includeBase();
-  @include includeHeadings();
-  @include includeMediaQueries();
+  @include minitypeBase();
+  @include minitypeHeadings();
+  @include minitypeMediaQueries();
 }
